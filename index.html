@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8ef">
+  <meta name="description" content="Fresh, feel-good food made with love at Saffron & Stone. Explore our menu and place an order.">
+  <title>Saffron &amp; Stone | Good food, good mood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#home" aria-label="Saffron and Stone home">
+        <span class="brand-mark" aria-hidden="true">S<span>&amp;</span>S</span>
+        <span class="brand-name">saffron <span>&amp;</span> stone</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+        <a class="cart-link" href="#menu" aria-label="Cart, 0 items">
+          <span aria-hidden="true">♧</span> Cart <span class="cart-count" aria-live="polite">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A little joy, served daily</p>
+          <h1>Good food.<br><span>Good mood.</span></h1>
+          <p class="hero-description">Fresh ingredients, big-hearted recipes, and a table with room for everyone. Your new favourite meal is just around the corner.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">Explore the menu <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#about">Our little story <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true"><span>☺</span><span>☺</span><span>☺</span></div>
+            <p><strong>Made with love</strong><br>and the freshest local ingredients</p>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="A colourful fresh salad bowl with vegetables and herbs">
+          </div>
+          <div class="floating-note"><span class="note-icon" aria-hidden="true">✦</span><span>Fresh<br>every day</span></div>
+          <div class="hero-sticker" aria-label="Made fresh, made happy">
+            <span>MADE FRESH</span><strong>♡</strong><span>MADE HAPPY</span>
+          </div>
+          <span class="hero-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="hero-sparkle sparkle-two" aria-hidden="true">✦</span>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>GOOD FOOD FOR GOOD PEOPLE</span>
+        <span class="hero-bottom-line"></span>
+        <span>SCROLL TO GET A TASTE ↓</span>
+      </div>
+    </section>
+
+    <section class="menu-section section-shell" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> From our kitchen</p>
+            <h2>A menu to <span>make you smile.</span></h2>
+          </div>
+          <p class="section-intro">A little something for every craving. Everything is made fresh, with ingredients we feel good about.</p>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filter menu by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All the good stuff</button>
+          <button class="filter-button" type="button" data-filter="veg" aria-pressed="false">🥬 Veg</button>
+          <button class="filter-button" type="button" data-filter="non-veg" aria-pressed="false">🍗 Non-veg</button>
+          <button class="filter-button" type="button" data-filter="desserts" aria-pressed="false">🍰 Desserts</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card" data-category="veg">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Garden-fresh salad with greens, tomatoes and avocado" loading="lazy">
+              <span class="category-tag">🥬 Veg</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row"><h3>Garden Glow Bowl</h3><span class="price">$12</span></div>
+              <p>Crunchy greens, ripe avocado, roasted chickpeas &amp; our sunny lemon dressing.</p>
+              <button class="add-button" type="button" data-item="Garden Glow Bowl">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="non-veg">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Grilled chicken served with fresh herbs and vegetables" loading="lazy">
+              <span class="category-tag">🍗 Non-veg</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row"><h3>Sunday Roast Chicken</h3><span class="price">$16</span></div>
+              <p>Herb-marinated chicken, golden potatoes &amp; a little drizzle of garlic butter.</p>
+              <button class="add-button" type="button" data-item="Sunday Roast Chicken">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Rich chocolate cake topped with chocolate frosting" loading="lazy">
+              <span class="category-tag">🍰 Desserts</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row"><h3>Little Chocolate Cake</h3><span class="price">$8</span></div>
+              <p>Soft, rich chocolate cake with silky frosting. Go on, you deserve it.</p>
+              <button class="add-button" type="button" data-item="Little Chocolate Cake">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="veg">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Pasta with vegetables, herbs and a light sauce" loading="lazy">
+              <span class="category-tag">🥬 Veg</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row"><h3>Sunshine Pesto Pasta</h3><span class="price">$14</span></div>
+              <p>Twirlable pasta with basil pesto, sweet tomatoes &amp; parmesan flakes.</p>
+              <button class="add-button" type="button" data-item="Sunshine Pesto Pasta">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="non-veg">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Juicy cheeseburger with lettuce and tomato" loading="lazy">
+              <span class="category-tag">🍗 Non-veg</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row"><h3>The Happy Burger</h3><span class="price">$15</span></div>
+              <p>Our juicy house patty, melty cheddar, crisp lettuce &amp; tangy house sauce.</p>
+              <button class="add-button" type="button" data-item="The Happy Burger">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Creamy dessert topped with fresh berries" loading="lazy">
+              <span class="category-tag">🍰 Desserts</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row"><h3>Berry Nice Cheesecake</h3><span class="price">$9</span></div>
+              <p>Dreamy vanilla cheesecake with a bright, juicy handful of fresh berries.</p>
+              <button class="add-button" type="button" data-item="Berry Nice Cheesecake">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="menu-footnote">Allergies or dietary needs? <a href="#contact">Just let us know</a> — we're happy to help.</p>
+      </div>
+    </section>
+
+    <section class="about-section section-shell" id="about">
+      <div class="container about-grid">
+        <div class="about-image-wrap">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="A cook preparing a fresh meal in a bright kitchen" loading="lazy">
+          <div class="about-stamp"><span>GOOD FOOD</span><strong>✳</strong><span>GOOD PEOPLE</span></div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A little about us</p>
+          <h2>Food tastes better<br>when it's made <span>with heart.</span></h2>
+          <p>We started Saffron &amp; Stone with one simple idea: the best meals bring people closer. So we cook the way we like to eat — with fresh, local ingredients, recipes full of flavour, and plenty of love.</p>
+          <p>From our kitchen to your table, we're here to make everyday meals feel a little more special.</p>
+          <a class="text-link" href="#contact">Come say hello <span aria-hidden="true">→</span></a>
+          <div class="about-stats">
+            <div><strong>100%</strong><span>fresh ingredients</span></div>
+            <div><strong>Made</strong><span>with a whole lot of love</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Your table is waiting</p>
+          <h2>Hungry? Let's<br><span>make it happen.</span></h2>
+          <p>Tell us what you're craving or just drop us a note. We'll get back to you as soon as we can.</p>
+          <div class="contact-detail"><span class="detail-icon" aria-hidden="true">⌖</span><span><strong>Find us</strong><br>42 Market Street, Your Town</span></div>
+          <div class="contact-detail"><span class="detail-icon" aria-hidden="true">◷</span><span><strong>We're open</strong><br>Every day, 11am – 9pm</span></div>
+          <div class="contact-detail"><span class="detail-icon" aria-hidden="true">♡</span><span><strong>Give us a ring</strong><br><a href="tel:+15550142200">(555) 014-2200</a></span></div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <h3>Send a little note</h3>
+          <p>Fields marked with * are required.</p>
+          <div class="form-row">
+            <label for="name">Your name *</label>
+            <input id="name" name="name" type="text" placeholder="e.g. Jamie Smith" autocomplete="name" required minlength="2">
+          </div>
+          <div class="form-row">
+            <label for="email">Email address *</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="order">What can we help with?</label>
+            <select id="order" name="order">
+              <option value="">Choose one (optional)</option>
+              <option value="order">I'd like to place an order</option>
+              <option value="question">I have a question</option>
+              <option value="hello">Just saying hello</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Your message *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us what's on your mind..." required minlength="10"></textarea>
+          </div>
+          <button class="button button-primary form-submit" type="submit">Send your message <span aria-hidden="true">→</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">S<span>&amp;</span>S</span>
+        <span class="brand-name">saffron <span>&amp;</span> stone</span>
+      </a>
+      <p>Good food, good mood. <span aria-hidden="true">♡</span></p>
+      <a class="back-to-top" href="#home">Back to the top ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© 2025 Saffron &amp; Stone</span><span>Made fresh, made happy.</span></div>
+  </footer>
+</body>
+</html>
